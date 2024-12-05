@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/githubsync.css';
+import './styles/styles.css';
 
 export interface GitHubSyncProps {
   instance_id: string | number;
