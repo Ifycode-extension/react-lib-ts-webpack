@@ -1,0 +1,9 @@
+.UI-Button {
+  padding: 10px 20px;
+  background: brown;
+  color: white;
+}
+
+.UI-Button:hover {
+  background: black !important;
+}
