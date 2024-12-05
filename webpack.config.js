@@ -1,4 +1,5 @@
 const path = require('path');
+const NpmDtsPlugin = require('npm-dts-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -34,5 +35,11 @@ module.exports = {
 
   externals: {
     react: 'react'
-  }
+  },
+
+  plugins: [
+    new NpmDtsPlugin({
+      output: 'dist/index.d.ts'
+    })
+  ]
 };
