@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/styles.css';
+import '../styles/bb-styles.css';
 
 export interface GitHubSyncProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   configOptions: {
@@ -14,10 +14,10 @@ export const GitHubSync: React.FunctionComponent<GitHubSyncProps> = (props: GitH
     return null;
   }
   return (
-    <>
-      <button className="UI-Button" onClick={() => alert('Test')}>
+    <div className="bb-pos-fixed bb-pos-r30-b30">
+      <button className="bb-button bb-pad-s15-tb30" onClick={() => alert("That's all this button does for now.")}>
         {configOptions.instance_id}
       </button>
-    </>
+    </div>
   );
 };
