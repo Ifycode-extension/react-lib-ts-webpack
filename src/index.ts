@@ -1,5 +1,1 @@
-import GitHubSync from './GithubSync';
-
-export { 
-    GitHubSync
-};
+export * from './components';
